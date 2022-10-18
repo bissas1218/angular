@@ -1,0 +1,18 @@
+○ github.com 프로젝트 생성
+
+○ 프로젝트 복사 
+git clone https://github.com/bissas1218/angular.git
+
+○ Angular CLI설치
+npm install -g @angular/cli
+
+○ npm전역 바이너리에 필요한 PowerShell스크립트 실행 허용
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+○ Angular프로젝트 생성 
+ng new my-app
+
+○ 프로젝트 실행 
+cd my-app
+ng serve --open
+
