@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,11 +13,15 @@ import { MyStoreModule } from './mystore/mystore.module';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,   
     AppRoutingModule,
     MyStoreModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:[
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
+]
 })
 export class AppModule { }
