@@ -7,9 +7,10 @@ import { RouterModule } from "@angular/router";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "../app.component";
 import { CommonModule } from "@angular/common";
-import { FormsModule } from "@angular/forms";
+import { FormBuilder, FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ProductDetailsComponent } from "./product-details.component";
 import { CartComponent } from "./cart.component";
+import { ShippingComponent } from "./shipping.component";
 
 
 @NgModule({
@@ -22,10 +23,12 @@ import { CartComponent } from "./cart.component";
     ],
     imports: [
         CommonModule,
+        ReactiveFormsModule,
         RouterModule.forChild([
             {path:'list', component: ProductListComponent},
             {path:'products/:productId', component: ProductDetailsComponent},
-            {path:'cart', component: CartComponent}
+            {path:'cart', component: CartComponent},
+            {path:'shipping', component: ShippingComponent}
         ])
     ],
     providers: [
