@@ -9,6 +9,7 @@ import { AppComponent } from "../app.component";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { ProductDetailsComponent } from "./product-details.component";
+import { CartComponent } from "./cart.component";
 
 
 @NgModule({
@@ -16,13 +17,15 @@ import { ProductDetailsComponent } from "./product-details.component";
         TopBarComponent,
         MystoreComponent,
         ProductListComponent,
-        ProductDetailsComponent
+        ProductDetailsComponent,
+        CartComponent
     ],
     imports: [
         CommonModule,
         RouterModule.forChild([
             {path:'list', component: ProductListComponent},
-            {path:'products/:productId', component: ProductDetailsComponent}
+            {path:'products/:productId', component: ProductDetailsComponent},
+            {path:'cart', component: CartComponent}
         ])
     ],
     providers: [
