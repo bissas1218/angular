@@ -19,7 +19,8 @@ import { ShippingComponent } from "./shipping.component";
         MystoreComponent,
         ProductListComponent,
         ProductDetailsComponent,
-        CartComponent
+        CartComponent,
+        ShippingComponent
     ],
     imports: [
         CommonModule,
@@ -42,8 +43,7 @@ import { ShippingComponent } from "./shipping.component";
      //   AppComponent
     ],
     schemas:[
-        CUSTOM_ELEMENTS_SCHEMA,
-        NO_ERRORS_SCHEMA
+        
     ]
 })
 export class MyStoreModule { }
