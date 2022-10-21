@@ -11,6 +11,7 @@ import { FormBuilder, FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ProductDetailsComponent } from "./product-details.component";
 import { CartComponent } from "./cart.component";
 import { ShippingComponent } from "./shipping.component";
+import { ProductAlertsComponent } from "./product-alerts.component";
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ShippingComponent } from "./shipping.component";
         ProductListComponent,
         ProductDetailsComponent,
         CartComponent,
-        ShippingComponent
+        ShippingComponent,
+        ProductAlertsComponent
     ],
     imports: [
         CommonModule,
