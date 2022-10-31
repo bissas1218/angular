@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 
 import { MyStoreModule } from './mystore/mystore.module';
 import { HttpClientModule } from '@angular/common/http';
+import { LifecycleHooksModule } from './lifecycle-hooks/lifecycle-hooks.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,   
     AppRoutingModule,
     MyStoreModule,
-    HttpClientModule    
+    HttpClientModule,
+    LifecycleHooksModule   
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -12,7 +12,14 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ○ Angular프로젝트 생성 
 ng new my-app
 
+○ npm패키지 다운로드 및 설치
+npm install
+
 ○ 프로젝트 실행 
 cd my-app
 ng serve --open
+ng serve --port 4201 다른포트 지정
 
+○ 애플리케이션 빌드 및 호스팅
+이 명령은 호스팅 서비스에서 응용 프로그램을 제공하는 데 필요한 모든 파일이 포함된 dist폴더를 응용 프로그램 루트 디렉터리에 만듭니다.
+ng build 
