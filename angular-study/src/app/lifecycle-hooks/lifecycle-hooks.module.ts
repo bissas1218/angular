@@ -2,6 +2,8 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
+import { DoCheckParentComponent } from "./do-check-parent.component";
+import { DoCheckComponent } from "./do-check.component";
 import { LifecycleHooksComponent } from "./lifecycle-hooks.component";
 import { LoggerService } from "./logger.service";
 import { OnChangesParentComponent } from "./on-changes-parent.component";
@@ -22,7 +24,9 @@ import { SpyParentComponent } from "./spy.component";
         PeekABooComponent,
         SpyParentComponent,
         OnChangesParentComponent,
-        OnChangesComponent
+        OnChangesComponent,
+        DoCheckParentComponent,
+        DoCheckComponent
     ],
     exports:[
         LifecycleHooksComponent

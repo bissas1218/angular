@@ -8,6 +8,7 @@ import { Component } from "@angular/core";
         <a href="#hooks">Peek-a-boo: (most) lifecycle hooks</a><br/>
         <a href="#spy">Spy: directive with OnInit & OnDestroy</a><br/>
         <a href="#onchanges">OnChanges</a><br/>
+        <a href="#docheck">DoCheck</a><br/>
 
         <peek-a-boo-parent id="hooks"></peek-a-boo-parent>
         <a href="#top">back to top</a>
@@ -21,6 +22,10 @@ import { Component } from "@angular/core";
         <a href="#top">back to top</a>
         <hr/>
 
+        <do-check-parent id="docheck"></do-check-parent>
+        <a href="#top">back to top</a>
+        <hr/>
+        
     </body>
     `,
     styleUrls: ['./lifecycle-hooks.css']
