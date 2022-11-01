@@ -5,11 +5,22 @@ import { Component } from "@angular/core";
     template:`
     <body>
         <h1 id="top">Lifecycle Hooks</h1>
-        <a href="#hooks">Peek-a-boo: (most) lifecycle hooks</a>
-        
+        <a href="#hooks">Peek-a-boo: (most) lifecycle hooks</a><br/>
+        <a href="#spy">Spy: directive with OnInit & OnDestroy</a><br/>
+        <a href="#onchanges">OnChanges</a><br/>
+
         <peek-a-boo-parent id="hooks"></peek-a-boo-parent>
         <a href="#top">back to top</a>
         <hr />
+
+        <spy-parent id="spy"></spy-parent>
+        <a href="#top">back to top</a>
+        <hr/>
+
+        <on-changes-parent id="onchanges"></on-changes-parent>
+        <a href="#top">back to top</a>
+        <hr/>
+
     </body>
     `,
     styleUrls: ['./lifecycle-hooks.css']
