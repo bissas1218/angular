@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { MyStoreModule } from './mystore/mystore.module';
 import { HttpClientModule } from '@angular/common/http';
 import { LifecycleHooksModule } from './lifecycle-hooks/lifecycle-hooks.module';
+import { LoggerService } from './lifecycle-hooks/logger.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { LifecycleHooksModule } from './lifecycle-hooks/lifecycle-hooks.module';
     AppRoutingModule,
     MyStoreModule,
     HttpClientModule,
-    LifecycleHooksModule   
+    LifecycleHooksModule
   ],
   providers: [],
   bootstrap: [AppComponent],
